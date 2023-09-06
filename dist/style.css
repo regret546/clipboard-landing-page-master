@@ -69,6 +69,7 @@ h6 {
 
 :root {
   /* Primary Colors */
+  --clr--white: hsl(0, 0%, 100%);
   --clr--strong-cyan: hsl(171, 66%, 44%);
   --clr--light-blue: hsl(233, 100%, 69%);
   /* Neutral Colors */
@@ -84,4 +85,11 @@ h6 {
   /* Font-Weight */
   --fw--bold: 400;
   --fw--very-bold: 600;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr--white);
+  font-family: var(--ff--primary);
+  font-size: var(--fs--regular);
 }/*# sourceMappingURL=style.css.map */
