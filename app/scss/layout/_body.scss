@@ -1,5 +1,7 @@
 body {
-  min-height: 100vh;
+  background: url("/images/bg-header-mobile.png") no-repeat;
+  background-size: contain;
+  background-position: top;
   background-color: var(--clr--white);
   font-family: var(--ff--primary);
   font-size: var(--fs--regular);
