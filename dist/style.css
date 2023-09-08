@@ -103,7 +103,40 @@ body {
   margin: 2rem;
 }
 
+.clipboard__main {
+  text-align: center;
+}
 .clipboard__main_header {
   display: grid;
+  gap: 1rem;
   justify-items: center;
+}
+.clipboard__main_header h2 {
+  font-size: 2rem;
+  color: var(--clr--dark-grayish-blue);
+}
+.clipboard__main_header p {
+  color: var(--clr--grayish-blue);
+}
+.clipboard__main_header_btn {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+.clipboard__main_header_btn button {
+  font-weight: var(--fw--very-bold);
+  color: var(--clr--white);
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.clipboard__main_header_btn .btn-windows {
+  background-color: var(--clr--strong-cyan);
+}
+.clipboard__main_header_btn .btn-mac {
+  background-color: var(--clr--light-blue);
+}
+.clipboard__main_header_btn button:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
