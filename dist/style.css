@@ -104,19 +104,21 @@ body {
 }
 
 .clipboard__main {
+  display: grid;
+  gap: 1.5rem;
   text-align: center;
+}
+.clipboard__main h2 {
+  font-size: 2rem;
+  color: var(--clr--dark-grayish-blue);
+}
+.clipboard__main p {
+  color: var(--clr--grayish-blue);
 }
 .clipboard__main_header {
   display: grid;
   gap: 1rem;
   justify-items: center;
-}
-.clipboard__main_header h2 {
-  font-size: 2rem;
-  color: var(--clr--dark-grayish-blue);
-}
-.clipboard__main_header p {
-  color: var(--clr--grayish-blue);
 }
 .clipboard__main_header_btn {
   display: grid;
@@ -139,4 +141,8 @@ body {
 }
 .clipboard__main_header_btn button:hover {
   opacity: 0.8;
+}
+.clipboard__main_tracks {
+  display: grid;
+  gap: 2rem;
 }/*# sourceMappingURL=style.css.map */

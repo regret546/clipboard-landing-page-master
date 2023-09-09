@@ -1,16 +1,19 @@
 .clipboard__main {
+  display: grid;
+  gap: 1.5rem;
   text-align: center;
+  h2 {
+    font-size: 2rem;
+    color: var(--clr--dark-grayish-blue);
+  }
+  p {
+    color: var(--clr--grayish-blue);
+  }
   &_header {
     display: grid;
     gap: 1rem;
     justify-items: center;
-    h2 {
-      font-size: 2rem;
-      color: var(--clr--dark-grayish-blue);
-    }
-    p {
-      color: var(--clr--grayish-blue);
-    }
+
     &_btn {
       display: grid;
       gap: 1rem;
@@ -35,5 +38,10 @@
         opacity: 0.8;
       }
     }
+  }
+
+  &_tracks {
+    display: grid;
+    gap: 2rem;
   }
 }
