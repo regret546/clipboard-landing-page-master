@@ -144,5 +144,11 @@ body {
 }
 .clipboard__main_tracks {
   display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+.clipboard__main_access {
+  display: grid;
+  justify-items: center;
   gap: 2rem;
 }/*# sourceMappingURL=style.css.map */

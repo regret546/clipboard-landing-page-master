@@ -2,6 +2,7 @@
   display: grid;
   gap: 1.5rem;
   text-align: center;
+
   h2 {
     font-size: 2rem;
     color: var(--clr--dark-grayish-blue);
@@ -42,6 +43,12 @@
 
   &_tracks {
     display: grid;
+    justify-items: center;
+    gap: 2rem;
+  }
+  &_access {
+    display: grid;
+    justify-items: center;
     gap: 2rem;
   }
 }
