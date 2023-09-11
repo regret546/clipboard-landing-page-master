@@ -105,7 +105,7 @@ body {
 
 .clipboard__main {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   text-align: center;
 }
 .clipboard__main h2 {
@@ -142,13 +142,11 @@ body {
 .clipboard__main_header_btn button:hover {
   opacity: 0.8;
 }
-.clipboard__main_tracks {
+.clipboard__main_tracks, .clipboard__main_access, .clipboard__main_workflow {
   display: grid;
   justify-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
-.clipboard__main_access {
-  display: grid;
-  justify-items: center;
-  gap: 2rem;
+.clipboard__main_tracks p, .clipboard__main_access p, .clipboard__main_workflow p {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
