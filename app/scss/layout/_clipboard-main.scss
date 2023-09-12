@@ -1,7 +1,8 @@
 .clipboard__main {
   display: grid;
-  gap: 5rem;
+  gap: 8rem;
   text-align: center;
+  margin-top: 5rem;
 
   button {
     font-weight: var(--fw--very-bold);
@@ -44,7 +45,8 @@
   &_tracks,
   &_access,
   &_workflow,
-  &_download {
+  &_download,
+  &_footer {
     display: grid;
     justify-items: center;
     gap: 1rem;
@@ -53,9 +55,32 @@
     }
   }
 
+  &_workflow {
+    gap: 2rem;
+  }
+
   &_partners {
     display: grid;
     justify-items: center;
     gap: 4rem;
+  }
+  &_footer {
+    gap: 1.5rem;
+    img {
+      width: 75px;
+      height: 75px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 100;
+    }
+    .social-media {
+      display: flex;
+      gap: 2.5rem;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 }

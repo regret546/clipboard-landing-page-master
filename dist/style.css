@@ -105,8 +105,9 @@ body {
 
 .clipboard__main {
   display: grid;
-  gap: 5rem;
+  gap: 8rem;
   text-align: center;
+  margin-top: 5rem;
 }
 .clipboard__main button {
   font-weight: var(--fw--very-bold);
@@ -142,16 +143,38 @@ body {
   gap: 1rem;
   width: 100%;
 }
-.clipboard__main_tracks, .clipboard__main_access, .clipboard__main_workflow, .clipboard__main_download {
+.clipboard__main_tracks, .clipboard__main_access, .clipboard__main_workflow, .clipboard__main_download, .clipboard__main_footer {
   display: grid;
   justify-items: center;
   gap: 1rem;
 }
-.clipboard__main_tracks p, .clipboard__main_access p, .clipboard__main_workflow p, .clipboard__main_download p {
+.clipboard__main_tracks p, .clipboard__main_access p, .clipboard__main_workflow p, .clipboard__main_download p, .clipboard__main_footer p {
   margin-bottom: 1rem;
+}
+.clipboard__main_workflow {
+  gap: 2rem;
 }
 .clipboard__main_partners {
   display: grid;
   justify-items: center;
   gap: 4rem;
+}
+.clipboard__main_footer {
+  gap: 1.5rem;
+}
+.clipboard__main_footer img {
+  width: 75px;
+  height: 75px;
+}
+.clipboard__main_footer h2 {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.clipboard__main_footer .social-media {
+  display: flex;
+  gap: 2.5rem;
+}
+.clipboard__main_footer .social-media img {
+  width: 25px;
+  height: 25px;
 }/*# sourceMappingURL=style.css.map */
