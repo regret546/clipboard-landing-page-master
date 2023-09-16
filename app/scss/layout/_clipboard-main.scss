@@ -1,4 +1,5 @@
 .clipboard__main {
+  max-width: 500px;
   display: grid;
   gap: 8rem;
   text-align: center;
@@ -24,7 +25,7 @@
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--clr--dark-grayish-blue);
   }
   p {
@@ -55,6 +56,18 @@
     }
   }
 
+  &_tracks {
+    &_content {
+      margin-top: 2rem;
+      display: grid;
+      &_body {
+        h2 {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+
   &_workflow {
     gap: 2rem;
   }
@@ -80,6 +93,54 @@
       img {
         width: 25px;
         height: 25px;
+      }
+    }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width: 992px) {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+
+    button {
+      width: 250px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 1rem;
+    }
+
+    h2,
+    p {
+      max-width: 700px;
+    }
+    &_header {
+      &_btn {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &_tracks {
+      &_content {
+        display: flex;
+        gap: 3rem;
+        overflow: hidden;
+
+        &_header {
+          display: grid;
+          place-items: center;
+          margin-left: -5%;
+        }
+        &_body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 2rem;
+          text-align: left;
+        }
       }
     }
   }

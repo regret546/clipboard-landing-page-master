@@ -95,6 +95,13 @@ body {
   font-family: var(--ff--primary);
   font-size: var(--fs--regular);
 }
+@media only screen and (min-width: 992px) {
+  body {
+    background: url("/images/bg-header-desktop.png") no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+}
 
 .container {
   min-height: 100vh;
@@ -104,10 +111,12 @@ body {
 }
 
 .clipboard__main {
+  max-width: 500px;
   display: grid;
   gap: 8rem;
   text-align: center;
   margin-top: 5rem;
+  /* Medium Devices, Desktops */
 }
 .clipboard__main button {
   font-weight: var(--fw--very-bold);
@@ -127,7 +136,7 @@ body {
   opacity: 0.8;
 }
 .clipboard__main h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--clr--dark-grayish-blue);
 }
 .clipboard__main p {
@@ -150,6 +159,13 @@ body {
 }
 .clipboard__main_tracks p, .clipboard__main_access p, .clipboard__main_workflow p, .clipboard__main_download p, .clipboard__main_footer p {
   margin-bottom: 1rem;
+}
+.clipboard__main_tracks_content {
+  margin-top: 2rem;
+  display: grid;
+}
+.clipboard__main_tracks_content_body h2 {
+  margin-top: 2.5rem;
 }
 .clipboard__main_workflow {
   gap: 2rem;
@@ -177,4 +193,45 @@ body {
 .clipboard__main_footer .social-media img {
   width: 25px;
   height: 25px;
+}
+@media only screen and (min-width: 992px) {
+  .clipboard__main {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+  }
+  .clipboard__main button {
+    width: 250px;
+  }
+  .clipboard__main h2 {
+    font-size: 1.5rem;
+  }
+  .clipboard__main p {
+    font-weight: 1rem;
+  }
+  .clipboard__main h2,
+  .clipboard__main p {
+    max-width: 700px;
+  }
+  .clipboard__main_header_btn {
+    display: flex;
+    justify-content: center;
+  }
+  .clipboard__main_tracks_content {
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+  }
+  .clipboard__main_tracks_content_header {
+    display: grid;
+    place-items: center;
+    margin-left: -5%;
+  }
+  .clipboard__main_tracks_content_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+  }
 }/*# sourceMappingURL=style.css.map */
