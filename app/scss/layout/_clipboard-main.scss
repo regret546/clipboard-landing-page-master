@@ -70,6 +70,17 @@
 
   &_workflow {
     gap: 2rem;
+    &_body {
+      &_info {
+        display: grid;
+        gap: 1rem;
+      }
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      margin-inline: auto;
+    }
   }
 
   &_partners {
@@ -79,13 +90,26 @@
   }
   &_footer {
     gap: 1.5rem;
-    img {
-      width: 75px;
-      height: 75px;
-    }
-    h2 {
-      font-size: 1.3rem;
-      font-weight: 100;
+    &_body {
+      display: grid;
+      gap: 1.5rem;
+      place-items: center;
+
+      img {
+        width: 75px;
+        height: 75px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 100;
+      }
+
+      &_contact,
+      &_policy {
+        h2:nth-of-type(2) {
+          margin-top: 1.5rem;
+        }
+      }
     }
     .social-media {
       display: flex;
@@ -141,6 +165,40 @@
           gap: 2rem;
           text-align: left;
         }
+      }
+    }
+    &_access {
+      p {
+        margin-bottom: 5rem;
+      }
+    }
+    &_workflow {
+      max-width: 1500px;
+      &_body {
+        display: flex;
+        &_info {
+          place-items: center;
+          width: 33.3%;
+        }
+      }
+    }
+    &_partners {
+      display: flex;
+    }
+    &_footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      h2 {
+        font-size: 1.3rem;
+        font-weight: var(--fw--bold);
+      }
+      &_body {
+        width: 100%;
+        display: flex;
+        gap: 6rem;
       }
     }
   }
