@@ -175,7 +175,7 @@ body {
   gap: 1rem;
 }
 .clipboard__main_workflow img {
-  width: 35px;
+  width: px;
   height: 35px;
   margin-inline: auto;
 }
@@ -186,6 +186,12 @@ body {
 }
 .clipboard__main_footer {
   gap: 1.5rem;
+}
+.clipboard__main_footer h2 {
+  cursor: pointer;
+}
+.clipboard__main_footer h2:hover {
+  color: var(--clr--strong-cyan);
 }
 .clipboard__main_footer_body {
   display: grid;
@@ -208,8 +214,17 @@ body {
   gap: 2.5rem;
 }
 .clipboard__main_footer .social-media img {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 30px;
+}
+.clipboard__main_footer .social-media a img:last-child {
+  display: none;
+}
+.clipboard__main_footer .social-media a:hover img:last-child {
+  display: block;
+}
+.clipboard__main_footer .social-media a:hover img:first-child {
+  display: none;
 }
 @media only screen and (min-width: 992px) {
   .clipboard__main {
@@ -275,6 +290,7 @@ body {
     text-align: left;
   }
   .clipboard__main_footer h2 {
+    margin-top: 0 !important;
     font-size: 1.3rem;
     font-weight: var(--fw--bold);
   }
