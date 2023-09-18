@@ -121,8 +121,8 @@
       display: flex;
       gap: 2.5rem;
       img {
-        width: 40px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
       }
       a img:last-child {
         display: none;
@@ -215,6 +215,12 @@
         width: 100%;
         display: flex;
         gap: 6rem;
+      }
+      .social-media {
+        img {
+          width: 40px;
+          height: 30px;
+        }
       }
     }
   }
